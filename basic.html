@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluentScore - Базовый тариф</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .payment-instruction {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .payment-instruction h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .payment-steps {
+            text-align: left;
+            margin: 30px 0;
+        }
+        
+        .payment-steps li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .payment-steps li:before {
+            content: "•";
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+        
+        .telegram-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0088cc;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .telegram-btn i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .telegram-btn:hover {
+            background-color: #0077b3;
+        }
+        
+        .tariff-features {
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .tariff-features li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .tariff-features li:before {
+            content: "✓";
+            color: var(--success-color);
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./images/logo.jpg" alt="FluentScore Logo">
+                <span>FluentScore</span>
+            </a>
+            
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="payment-instruction">
+            <h1>Базовый тариф</h1>
+            <p class="price">$9.99<span>/месяц</span></p>
+            
+            <div class="tariff-features">
+                <h3>Включено в тариф:</h3>
+                <ul>
+                    <li>5 анализов речи в месяц</li>
+                    <li>Базовые рекомендации</li>
+                    <li>Прогноз балла IELTS</li>
+                    <li>Доступ к базовым учебным материалам</li>
+                </ul>
+            </div>
+            
+            <div class="payment-steps">
+                <h2>Как оплатить тариф:</h2>
+                <ol>
+                    <li>Нажмите на кнопку "Перейти в Telegram" ниже</li>
+                    <li>Отправьте сообщение "Базовый тариф" нашему боту</li>
+                    <li>Вы получите ссылку для оплаты через Kaspi.kz или кредитную карту</li>
+                    <li>После успешной оплаты вы получите доступ к платформе в течение 5 минут</li>
+                    <li>Если у вас возникли вопросы, наш менеджер ответит вам в Telegram</li>
+                </ol>
+            </div>
+            
+            <a href="https://t.me/fluentScore" class="telegram-btn" target="_blank">
+                <i class="fab fa-telegram"></i> Перейти в Telegram для оплаты
+            </a>
+            
+            <p class="note">После оплаты вы получите логин и пароль для доступа к платформе</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.jpg" alt="FluentScore Logo">
+                    <span>FluentScore</span>
+                </div>
+                <div class="footer-links">
+                    <h4>Ссылки</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#features">Возможности</a></li>
+                        <li><a href="index.html#pricing">Тарифы</a></li>
+                        <li><a href="index.html#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h4>Правовая информация</h4>
+                    <ul>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FluentScore. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

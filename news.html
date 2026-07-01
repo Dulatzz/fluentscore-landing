@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluentScore - Новости</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .news-article {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .news-article img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .news-date {
+            color: var(--light-text);
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .news-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .news-content {
+            line-height: 1.8;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./images/logo.jpg" alt="FluentScore Logo">
+                <span>FluentScore</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Главная</a></li>
+                <li><a href="index.html#features">Возможности</a></li>
+                <li><a href="index.html#how-it-works">Как это работает</a></li>
+                <li><a href="index.html#pricing">Тарифы</a></li>
+                <li><a href="index.html#about-project">О проекте</a></li>
+                <li><a href="index.html#team">Команда</a></li>
+                <li><a href="index.html#contact">Контакты</a></li>
+                <li><a href="news.html" class="active">Новости</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button onclick="changeLanguage('kk')">Қаз</button>
+                <button onclick="changeLanguage('ru')">Рус</button>
+                <button onclick="changeLanguage('en')">Eng</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="news-section">
+        <div class="container">
+            <h1>Новости FluentScore</h1>
+
+            <div class="news-article">
+                <img src="./images/news7.png" alt="Новость 1">
+                <div class="news-date">10 мая 2025</div>
+                <h2 class="news-title">Подготовка, полировка</h2>
+                <div class="news-content">
+                    <p>Мы продолжаем совершенствовать наш сервис и завершаем финальный проект для презентации перед преподавателем. Надеемся, что наша работа произведёт достойное впечатление и получит положительную оценку.</p>
+                </div>
+            </div>
+
+            <div class="news-article">
+                <img src="./images/news6.png" alt="Новость 1">
+                <div class="news-date">30 арпеля 2025</div>
+                <h2 class="news-title">Создание официального сайта FluentScore</h2>
+                <div class="news-content">
+                    <p>На этот раз мы разработали сайт, через который пользователи могут познакомиться с нашим сервисом и приобрести подходящий тарифный план.</p>
+                </div>
+            </div>
+
+            <div class="news-article">
+                <img src="./images/news5.png" alt="Новость 1">
+                <div class="news-date">15 апреля 2025</div>
+                <h2 class="news-title">MVP 2.0</h2>
+                <div class="news-content">
+                    <p>Наш первый MVP оказался достойной отправной точкой, однако со временем мы поняли, что для получения первых продаж его необходимо доработать. В обновлённой версии мы добавили окно авторизации, а ИИ-агент стал точнее анализировать устную речь и предоставлять более качественную обратную связь.</p>
+                </div>
+            </div>
+
+            <div class="news-article">
+                <img src="./images/news4.jpg" alt="Новость 1">
+                <div class="news-date">30 марта 2025</div>
+                <h2 class="news-title">Создание MVP</h2>
+                <div class="news-content">
+                    <p>Создание MVP (минимально жизнеспособного продукта) является ключевым этапом в процессе разработки нашего сервиса. Это позволяет не только на практике проверить жизнеспособность нашей идеи, но и подтвердить или опровергнуть выдвинутую гипотезу, основываясь на реальной обратной связи от пользователей. MVP помогает нам минимизировать риски, сэкономить ресурсы и сосредоточиться на том, что действительно важно для нашей целевой аудитории.</p>
+                </div>
+            </div>
+
+            <div class="news-article">
+                <img src="./images/news3.png" alt="Новость 1">
+                <div class="news-date">2 марта 2025</div>
+                <h2 class="news-title">Создание LandingPage</h2>
+                <div class="news-content">
+                    <p>Мы решили провести опрос среди целевой аудитории, чтобы проверить нашу гипотезу и собрать необходимые данные для анализа.</p>
+                </div>
+            </div>
+            
+            <!-- Шаблон новости (можно дублировать и заполнять) -->
+            <div class="news-article">
+                <img src="./images/news2.png" alt="Новость 1">
+                <div class="news-date">15 февраля 2025</div>
+                <h2 class="news-title">Основание FluentScore</h2>
+                <div class="news-content">
+                    <p>13 февраля 2025 года, при поддержке нашего преподавателя Владимира Попова, мы, Кадырбаев Ақжол и Көпберген Әшірәлі-Дулат, запустили сервис FluentScore.</p>
+                </div>
+            </div>
+            
+            <!-- Еще одна новость -->
+            <div class="news-article">
+                <img src="./images/news1.png" alt="Новость 2">
+                <div class="news-date">13 февраля 2025</div>
+                <h2 class="news-title">ElevatorPitch</h2>
+                <div class="news-content">
+                    <p>Мы создаём ИИ-платформу для подготовки к IELTS, которая помогает студентам и абитуриентам эффективно развивать навыки Speaking. Сервис автоматически анализирует ответы, предоставляет персонализированный фидбэк и точно прогнозирует баллы, облегчая процесс самоподготовки.</p>
+
+                    <p>Сейчас студенты готовятся с репетиторами, по учебникам или через онлайн-курсы, что требует значительных затрат времени и денег. Наше ключевое преимущество — мгновенная и объективная оценка, индивидуальные рекомендации и высокая доступность.</p>
+                        
+                    <p>В будущем мы планируем расширить платформу, добавив модули для анализа Listening, Writing и Reading, чтобы обеспечить комплексную подготовку ко всем частям экзамена.</p>
+                </div>
+            </div>
+            
+            <!-- Можно добавить больше новостей по такому же шаблону -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.jpg" alt="FluentScore Logo">
+                    <span>FluentScore</span>
+                </div>
+                <div class="footer-links">
+                    <h4 id="1a">Ссылки</h4>
+                    <ul>
+                        <li><a id="2a" href="#home">Главная</a></li>
+                        <li><a id="3a" href="#features">Возможности</a></li>
+                        <li><a id="4a" href="#pricing">Тарифы</a></li>
+                        <li><a id="5a" href="#team">Команда</a></li>
+                        <li><a id="6a" href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h4 id="7a">Правовая информация</h4>
+                    <ul>
+                        <li><a id="8a" href="#">Политика конфиденциальности</a></li>
+                        <li><a id="9a" href="#">Условия использования</a></li>
+                        <li><a id="10a" href="#">Cookie-файлы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="footer-text">&copy; 2025 FluentScore. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Логика для переключения языков (аналогичная главной странице)
+        const translations = {
+            "kk": {
+                "news-title": "FluentScore жаңалықтары",
+                "nav-home": "Басты",
+                "nav-features": "Мүмкіндіктер",
+                "nav-how-it-works": "Қалай жұмыс істейді",
+                "nav-pricing": "Тарифтер",
+                "nav-about": "Жоба туралы",
+                "nav-team": "Команда",
+                "nav-contact": "Байланыс",
+                "nav-news": "Жаңалықтар",
+                "footer-text": "© 2025 FluentScore. Барлық құқықтар қорғалған.",
+                "1a": "Сілтемелер",
+                "2a": "Басты",
+                "3a": "Мүмкіндіктер",
+                "4a": "Тарифтер",
+                "5a": "Команда",
+                "6a": "Байланыстар",
+                "7a": "Құқықтық ақпарат",
+                "8a": "Құпиялылық саясаты",
+                "9a": "Пайдалану шарттары",
+                "10a": "Cookie-файлдар",
+            },
+            "ru": {
+                "news-title": "Новости FluentScore",
+                "nav-home": "Главная",
+                "nav-features": "Возможности",
+                "nav-how-it-works": "Как это работает",
+                "nav-pricing": "Тарифы",
+                "nav-about": "О проекте",
+                "nav-team": "Команда",
+                "nav-contact": "Контакты",
+                "nav-news": "Новости",
+                "footer-text": "© 2025 FluentScore. Все права защищены.",
+                "1a": "Ссылки",
+                "2a": "Главная",
+                "3a": "Возможности",
+                "4a": "Тарифы",
+                "5a": "Команда",
+                "6a": "Контакты",
+                "7a": "Правовая информация",
+                "8a": "Политика конфиденциальности",
+                "9a": "Условия использования",
+                "10a": "Cookie-файлы",
+            },
+            "en": {
+                "news-title": "FluentScore News",
+                "nav-home": "Home",
+                "nav-features": "Features",
+                "nav-how-it-works": "How It Works",
+                "nav-pricing": "Pricing",
+                "nav-about": "About",
+                "nav-team": "Team",
+                "nav-contact": "Contact",
+                "nav-news": "News",
+                "footer-text": "© 2025 FluentScore. All rights reserved.",
+                "1a": "Links",
+                "2a": "Home",
+                "3a": "Features",
+                "4a": "Rates",
+                "5a": "Team",
+                "6a": "Contacts",
+                "7a": "Legal Information",
+                "8a": "Privacy Policy",
+                "9a": "Terms of Use",
+                "10a": "Cookies",
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.getElementById("1a").innerHTML = translations[lang]["1a"];
+            document.getElementById("2a").innerHTML = translations[lang]["2a"];
+            document.getElementById("3a").innerHTML = translations[lang]["3a"];
+            document.getElementById("4a").innerHTML = translations[lang]["4a"];
+            document.getElementById("5a").innerHTML = translations[lang]["5a"];
+            document.getElementById("6a").innerHTML = translations[lang]["6a"];
+            document.getElementById("7a").innerHTML = translations[lang]["7a"];
+            document.getElementById("8a").innerHTML = translations[lang]["8a"];
+            document.getElementById("9a").innerHTML = translations[lang]["9a"];
+            document.getElementById("10a").innerHTML = translations[lang]["10a"];
+            // Обновляем заголовок страницы
+            document.querySelector('h1').innerText = translations[lang]["news-title"];
+            
+            // Обновляем навигацию
+            document.querySelectorAll('.nav-links a').forEach((link, index) => {
+                switch(index) {
+                    case 0: link.innerText = translations[lang]["nav-home"]; break;
+                    case 1: link.innerText = translations[lang]["nav-features"]; break;
+                    case 2: link.innerText = translations[lang]["nav-how-it-works"]; break;
+                    case 3: link.innerText = translations[lang]["nav-pricing"]; break;
+                    case 4: link.innerText = translations[lang]["nav-about"]; break;
+                    case 5: link.innerText = translations[lang]["nav-team"]; break;
+                    case 6: link.innerText = translations[lang]["nav-contact"]; break;
+                    case 7: link.innerText = translations[lang]["nav-news"]; break;
+                }
+            });
+            
+            // Обновляем футер
+            document.querySelector('.footer-bottom p').innerText = translations[lang]["footer-text"];
+        }
+
+        // Мобильное меню
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+
+            // Закрытие меню при клике на ссылку
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

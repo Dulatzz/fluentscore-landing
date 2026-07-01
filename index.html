@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FluentScore — ИИ-наставник для IELTS</title>
+  <meta name="description" content="Инновационная платформа для подготовки к IELTS с искусственным интеллектом. Мгновенная оценка Speaking и персонализированное обучение.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./images/logo.jpg" alt="FluentScore">
+        <span>FluentScore</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#features">Возможности</a></li>
+        <li><a href="#how-it-works">Как работает</a></li>
+        <li><a href="#about-project">О проекте</a></li>
+        <li><a href="#pricing">Тарифы</a></li>
+        <li><a href="#team">Команда</a></li>
+        <li><a href="#contact">Контакты</a></li>
+        <li><a href="news.html">Новости</a></li>
+      </ul>
+
+      <div class="language-switcher">
+        <button onclick="changeLanguage('kk')">Қаз</button>
+        <button onclick="changeLanguage('ru')">Рус</button>
+        <button onclick="changeLanguage('en')">Eng</button>
+      </div>
+
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-bolt"></i>
+          <span id="hero-badge">ИИ-платформа для IELTS</span>
+        </div>
+        <h1 id="title">FluentScore</h1>
+        <p id="subtitle" class="lead">Инновационная платформа для подготовки к IELTS</p>
+        <div class="hero-actions">
+          <a href="#pricing" class="cta-button">
+            <i class="fas fa-rocket"></i>
+            Начать обучение
+          </a>
+          <a href="#how-it-works" class="cta-secondary">
+            Как это работает →
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-value">98%</div>
+            <div class="hero-stat-label" id="stat-accuracy">Точность оценки</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">3x</div>
+            <div class="hero-stat-label" id="stat-speed">Быстрее обычного</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">24/7</div>
+            <div class="hero-stat-label" id="stat-availability">Доступность</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./images/hero-image.png" alt="FluentScore платформа">
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Features ── -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow" id="features-eyebrow">Возможности</div>
+        <h2 id="features-title">Наши преимущества</h2>
+        <p id="features-desc">Всё необходимое для успешной сдачи IELTS в одном месте</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3 id="1i">ИИ-анализ речи</h3>
+          <p id="2i">Мгновенная оценка вашего Speaking с детальными рекомендациями по каждому критерию IELTS</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3 id="3i">Прогноз балла</h3>
+          <p id="4i">Точное предсказание вашего результата на реальном экзамене IELTS на основе анализа речи</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 id="5i">Персонализация</h3>
+          <p id="6i">Индивидуальная программа обучения, адаптированная под ваши слабые места и цели</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How it works ── -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow" id="hiw-eyebrow">Процесс</div>
+        <h2 id="how-it-works-title">Как это работает?</h2>
+        <p id="hiw-desc">Три простых шага к улучшению вашего IELTS балла</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3 id="1j">Запишите свою речь</h3>
+          <p id="2j">Отвечайте на вопросы, аналогичные экзаменационным, прямо в браузере</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3 id="3j">Получите анализ</h3>
+          <p id="4j">Наш ИИ оценит вашу речь по всем критериям IELTS за секунды</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3 id="5j">Улучшайте результат</h3>
+          <p id="6j">Следуйте персонализированным рекомендациям и отслеживайте прогресс</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About project ── -->
+  <section id="about-project" class="about-project">
+    <div class="container">
+      <div class="section-header">
+       <div class="section-eyebrow" id="about-eyebrow">О проекте</div>
+        <h2 id="about-project-title">О проекте</h2>
+       <p id="about-desc">Посмотрите нашу презентацию и слайды</p>
+      </div>
+      <div class="video-container">
+        <video controls width="100%">
+            <source src="./videos/presentation.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+      </div>
+
+      <hr class="full-width-line" />
+
+      <div class="slider-wrapper">
+        <button id="prevBtn" class="slider-button"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-container">
+          <img id="sliderImage" src="./images/1.jpg" alt="Слайд презентации">
+        </div>
+        <button id="nextBtn" class="slider-button"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Pricing ── -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow" id="pricing-eyebrow">Тарифы</div>
+        <h2 id="pricing-title">Тарифные планы</h2>
+        <p id="pricing-desc">Выберите план, подходящий вашим целям</p>
+      </div>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3 id="1p">Базовый</h3>
+          <div class="price">$9.99<span id="2p">/месяц</span></div>
+          <ul>
+            <li id="3p">5 анализов речи в месяц</li>
+            <li id="4p">Базовые рекомендации</li>
+            <li id="5p">Прогноз балла</li>
+          </ul>
+          <a href="basic.html" target="_blank" class="pricing-cta" id="6p">Выбрать</a>
+        </div>
+        <div class="pricing-card popular">
+          <div class="popular-badge" id="7p">Популярный</div>
+          <h3 id="22p">Стандарт</h3>
+          <div class="price">$19.99<span id="8p">/месяц</span></div>
+          <ul>
+            <li id="9p">15 анализов речи в месяц</li>
+            <li id="10p">Подробные рекомендации</li>
+            <li id="11p">Прогноз балла + слабые места</li>
+            <li id="12p">Персональные упражнения</li>
+          </ul>
+          <a href="standard.html" target="_blank" class="pricing-cta" id="13p">Выбрать</a>
+        </div>
+        <div class="pricing-card">
+          <h3 id="14p">Премиум</h3>
+          <div class="price">$29.99<span id="15p">/месяц</span></div>
+          <ul>
+            <li id="16p">Неограниченное количество анализов</li>
+            <li id="17p">Расширенные рекомендации</li>
+            <li id="18p">Полный анализ слабых мест</li>
+            <li id="19p">Индивидуальная программа</li>
+            <li id="20p">Приоритетная поддержка</li>
+          </ul>
+          <a href="premium.html" target="_blank" class="pricing-cta" id="21p">Выбрать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="team">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow" id="team-eyebrow">Команда</div>
+      <h2 id="team-title">Наша команда</h2>
+      <p id="team-desc">Профессионалы, стоящие за FluentScore</p>
+    </div>
+    <div class="team-members">
+      <div class="member-card">
+        <div class="member-top">
+          <img class="member-photo" src="./images/team2.jpg" alt="Әшірәлі-Дулат Көпберген">
+          <div>
+            <p class="member-name" id="3b">Әшірәлі-Дулат Көпберген</p>
+            <p class="member-role" id="4b">Founder · Developer</p>
+          </div>
+        </div>
+        <div class="member-body">
+          <div class="member-row">
+            <i class="fas fa-crown"></i>
+            <span class="label">Роль</span>
+            <span class="value">Founder & CEO</span>
+          </div>
+          <div class="member-row">
+            <i class="fas fa-code"></i>
+            <span class="label">Стек</span>
+            <span class="value">HTML, CSS, JavaScript</span>
+          </div>
+          <div class="member-row">
+            <i class="fas fa-envelope"></i>
+            <span class="label">Email</span>
+            <span class="value accent">dulatkopbergen@gmail.com</span>
+          </div>
+        </div>
+        <div class="member-footer">
+          <span class="member-tag">Founder</span>
+          <span class="member-tag">Developer</span>
+          <span class="member-tag">IELTS</span>
+          <span class="member-tag">Product</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ── Contact ── -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+      <div class="section-eyebrow" id="contact-eyebrow">Контакты</div>
+        <h2 id="contact-title">Контакты</h2>
+        <p id="contact-desc">Готовы ответить на любые вопросы</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <p>Email: <a href="mailto:dulatkopbergen@gmail.com">dulatkopbergen@gmail.com</a></p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <p id="1m">Телефон: +7 (747) 741-1067</p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <p id="2m">Адрес: г. Алматы, Казахстан</p>
+          </div>
+          <div class="social-links">
+            <a href="https://t.me/fluentScore" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.instagram.com/fluent.score/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="email" placeholder="Ваш email" required>
+          <textarea placeholder="Ваше сообщение" required></textarea>
+          <button id="6m" type="submit">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-logo">
+            <img src="./images/logo.jpg" alt="FluentScore">
+            <span>FluentScore</span>
+          </div>
+         <p class="footer-desc" id="footer-desc">Инновационная платформа для подготовки к IELTS с искусственным интеллектом. Мгновенная оценка и персонализированное обучение.</p>
+        <div class="footer-links">
+          <h4 id="1a">Ссылки</h4>
+          <ul>
+            <li><a id="2a" href="#home">Главная</a></li>
+            <li><a id="3a" href="#features">Возможности</a></li>
+            <li><a id="4a" href="#pricing">Тарифы</a></li>
+            <li><a id="5a" href="#team">Команда</a></li>
+            <li><a id="6a" href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-legal">
+          <h4 id="7a">Правовая информация</h4>
+          <ul>
+            <li><a id="8a" href="#">Политика конфиденциальности</a></li>
+            <li><a id="9a" href="#">Условия использования</a></li>
+            <li><a id="10a" href="#">Cookie-файлы</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p id="footer-text">&copy; 2025 FluentScore. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => navLinks.classList.remove('active'));
+      });
+    }
+  </script>
+
+</body>
+</html>
