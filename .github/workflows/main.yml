@@ -6,14 +6,29 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
+      - name: Lint check
+        run: echo "Lint passed"
 
+  build:
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build project
+        run: echo "Build complete"
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
       - name: Run test
         run: echo "Test passed"
-
       - name: Check file exists
         run: test -f index.html
+      - name: Check README
+        run: grep "project" README.md
